@@ -1,0 +1,743 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Product Common</title>
+<link rel="stylesheet" href="css/Prj1.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mojio-js/3.5.2/mojio-js.min.js">
+</head>
+
+<body>
+<!--/*Div logo,search and login */-->
+<!-------------------------Logo & Search--------------------------->
+<div class="info">
+	<div class="logo">
+		<a href="home.html" target="_blank"><img src="img/Logoguitar.png" width="150" height="147"></a>
+	</div>
+	<div class="search">
+
+	<input type="text" name="Search">
+<div class="iconsearch"><img src="img/search-icon-large.png" width="40px"></div>
+	 
+	</div>
+	<!----------------------SignIn-------------------------->
+	<buttonx onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</buttonx>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainerr">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img/chibiAvt.jpg" width="200px" height="300px" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="containerr">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button1 type="submit">Login</button1>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="containerr" style="background-color:#f1f1f1">
+      <button1 type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button1>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+<!-----------------------------SignUp------------------------------->
+<buttonx onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</buttonx>
+
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="containerr1">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button1 type="submit" class="signupbtn">Sign Up</button1>
+        <button2 type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button2>
+      </div>
+    </div>
+  </form>
+</div>
+</div>
+<nav>
+	
+		<a href="ProductCommon.html" target="_blank">Acoustic Guitar</a>
+		<a href="#">Education</a>
+		<a href="News.html" target="_blank">News</a>
+		<a href="Videos.html" target="_blank">Video</a>
+		<a href="#">Photos</a>
+	</nav>
+<!--/*Div SlideShow*/--> 
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="img/Slideshow4.jpg" style="width:100%" height="500px">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="img/slideshow5.jpg" style="width:100%" height="500px">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="img/slideshow3.jpg" style="width:100%" height="500px">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="img/SlideShow1.jpg" style="width:100%" height="500px">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="img/Slideshow2.jpg" style="width:100%" height="500px">
+</div>
+</div>
+
+<div class="divdot" style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+	
+<!--/*div buttonh----------------------*/-->
+<div class="buttonh">
+	<buttonh class="btnn"><i class="fa fa-home"></i> Agency</buttonh>
+<buttonh class="btnn"><i class="fa fa-address-card-o"></i> Installment</buttonh>
+<buttonh class="btnn"><em class="fa fa-assistive-listening-systems"></em> Maintainance</buttonh>
+<buttonh class="btnn"><i class="fa fa-truck"></i> Transpotation</buttonh>
+</div>
+	<!--/*Div Details of Product*/-->
+	<article class="container">
+	<div class="home-product">
+		<li style="color: darkred;margin-left: 30px;">Acoustic Guitar</li>
+	</div>
+
+<!--RollProduct-->
+	<div class="main">
+
+<h1>Product</h1>
+<hr>
+
+<h2>Best Seller</h2>
+
+<div id="myBtnContainer">
+  <button class="btn" onclick="filterSelection('taylor')"> Taylor</button>
+  <button class="btn" onclick="filterSelection('takamine')"> Takamine</button>
+  <button class="btn" onclick="filterSelection('fender')"> Fender</button>
+  <button class="btn" onclick="filterSelection('sigma')"> Sigma</button>
+  <button class="btn" onclick="filterSelection('kapok')"> Kapok</button>
+    <button class="btn" onclick="filterSelection('lazer')"> Lazer</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+ <div class="column taylor">
+ 	<div class="sp">
+	<img src="img/ACADEMY SERIES A10.jpg" width="250px" height="250px">
+	<p class="name">Taylor Acedemy A10</p>
+	<p class="price">Price : 450$</p>
+	<a href="ProductDetail.html" target="_blank"><div class="overlay">
+			<div class="text">
+				<h3>Taylor Acedemy A10</h3>
+				<p>Shape: Musatol</p>
+				<p>Bracing: D Bracing</p>
+				<p>Wood: Sapele Laminate </p>
+				<p>Electronics: TS-2G5</p>
+			</div>
+	  </div>	</a>
+		</div>
+  	<div class="sp">
+	<img src="img/guitar_taylor_academy_12N_nylon_fear.jpg" width="250px" height="250px">
+	<p class="name">Taylor Acedemy 12N</p>
+	<p class="price">Price : 350$</p>
+	<div class="overlay">
+			<div class="text">
+				<h3>Taylor Acedemy 12N</h3>
+				<p>Shape: Puntero</p>
+				<p>Bracing: X Bracing</p>
+				<p>Wood: Sapele Laminate </p>
+				<p>Electronics: ES-2</p>
+			</div>
+	  </div>	
+		</div>
+  </div>
+  <div class="column taylor">
+  	<div class="sp">
+	<img src="img/GSmini.jpg" width="250px" height="250px">
+	<p class="name">Taylor GSMini W/ES-2</p>
+	<p class="price">Price : 200$</p>
+	<div class="overlay">
+			<div class="text">
+				<h3>TAYLOR GSMINI W/ES-2</h3>
+				<p>Shape: GS Mini</p>
+				<p>Bracing: X Bracing</p>
+				<p>Wood: Sapele Laminate </p>
+				<p>Electronics: ES-2</p>
+			</div>
+	  </div>	
+		</div>
+  </div>
+  <div class="column taylor">  
+  <div class="sp">
+	<img src="img/TAYLOR SWIFT BABY TAYLOR.jpg" width="250px" height="250px">
+	<p class="name">Taylor Swift Baby</p>
+	<p class="price">Price : 500$</p>
+	<div class="overlay">
+			<div class="text">
+				<h3>Taylor Swift Baby</h3>
+				<p>Form: Baby</p>
+				<p>Bracing: X Bracing</p>
+				<p>Wood: Sitka Spruce</p>
+				<p>Baby Series</p>
+			</div>
+	  </div>
+</div>
+  </div>
+  <div class="column taylor"> 
+  <div class="sp">
+	<img src="img/taylor-150e-450x471.jpg" width="250px" height="250px">
+	<p class="name">Taylor 150E</p>
+	<p class="price">Price :<del>400$</del> 375$</p>
+	<div class="overlay">
+			<div class="text">
+				<h3>TAYLOR 150E</h3>
+				<p>Wood: Sitka full in front of</p>
+				<p>Side behind and next side made by <br>wood sapele classes</p>
+				
+				<p>Body : by durable wood sapele</p>
+				<p>20 keys of ebony wood with notes
+ <br>pattern 6mm</p>
+			</div>
+	  </div>
+	  <div class="sale">
+	  	Sale off 20%
+	  </div>
+</div>
+  </div> 
+  <div class="column taylor">  
+  <div class="sp">
+	<img src="img/BigBABY E(1).jpg" width="250px" height="250px">
+	<p class="name">Taylor BigBaby</p>
+	<p class="price">Price : 375$</p>
+	<div class="overlay">
+			<div class="text">
+				<h3>Taylor Big Baby</h3>
+				<p>Form : baby</p>
+				<p>System ES-B</p>
+				<p>Wood make body – Wood Sapele </p>
+				<p>Non-cutaway</p>
+			</div>
+	  </div>
+</div>
+  </div>
+  <!--Takamine---------------------------> 
+  <div class="column takamine">
+ 	<div class="sp">
+	<img src="img/Takamine/gd93-450x471.jpg" width="250px" height="250px">
+	<p class="name">Takamine GD93CE</p>
+	<p class="price">Price :<del>500$</del> 400$</p>
+		<div class="overlay">
+			<div class="text">
+				<h3>Takamine GD93CE</h3>
+				<p>Form: Dreadnought size (10e)</p>
+				<p>Side top: solid Sitka spruce</p>
+				<p>Side behind: sapele</p>
+				<p>Body: Mahogany</p>
+			</div>
+	  </div>
+	  <div class="sale">
+	  	Sale off 20%
+	  </div>
+</div>
+ </div>
+  <div class="column takamine">
+  <div class="sp">
+	<img src="img/Takamine/takamine-d1d-ns-450x471.jpg" width="250px" height="250px">
+	<p class="name">Takamine D1D</p>
+	<p class="price">Price : <del>700$</del>699$</p>
+	<div class="overlay">
+			<div class="text">
+				<h3>Takamine D1D</h3>
+				<p>Ebony fingerboard decorated</p>
+				<p>Body Lutz Spruce easy to setting</p>
+				<p>Wood Sapele pretty design</p>
+				<p>Small Size , easy to play</p>
+			</div>
+	  </div>
+	  <div class="sale">
+	  	Sale off 0.1%
+	  </div>
+</div>
+</div>
+  <div class="column takamine">
+  	<div class="sp">
+	<img src="img/Takamine/takamine-ed1dc-450x471.jpg" width="250px" height="250px">
+	<p class="name">Takamine ED1DC</p>
+	<p class="price">Price : 550$</p>
+	<div class="overlay">
+			<div class="text">
+				<h3>Takamine ED1DC</h3>
+				<p>Shape: Potanony</p>
+				<p>Bracing: X Bracing</p>
+				<p>Wood: Sapele Laminate </p>
+				<p>Electronics: ES-2</p>
+			</div>
+	  </div>	
+		</div>
+  </div>
+  <div class="column takamine">  
+  <div class="sp">
+	<img src="img/Takamine/takamine-ed1nc-450x471.jpg" width="250px" height="250px">
+	<p class="name">Takamine ED1NC</p>
+	<p class="price">Price : 500$</p>
+	<div class="overlay">
+			<div class="text">
+				<h3>Takamine ED1NC</h3>
+				<p>Form: Titan</p>
+				<p>Bracing: X Bracing</p>
+				<p>Wood: Sitka Spruce</p>
+				<p>ED1 Series</p>
+			</div>
+	  </div>
+</div>
+  </div>
+  <div class="column takamine"> 
+  <div class="sp">
+	<img src="img/Takamine/takamine-gd93cenat-450x471.jpg" width="250px" height="250px">
+	<p class="name">Takamine GD93NAT</p>
+	<p class="price">Price :<del>400$</del> 375$</p>
+	<div class="overlay">
+			<div class="text">
+				<h3>Takamine GD93NAT</h3>
+				<p>Wood: Sitka full in front of</p>
+				<p>Side behind and next side made by <br>wood sapele classes</p>
+				
+				<p>Body : by durable wood sapele</p>
+				<p>20 keys of ebony wood with notes
+ <br>pattern 6mm</p>
+			</div>
+	  </div>
+	  <div class="sale">
+	  	Sale off 20%
+	  </div>
+</div>
+  </div> 
+  <div class="column takamine">  
+  <div class="sp">
+	<img src="img/Takamine/takamine_D1N_dang_A.jpg" width="250px" height="250px">
+	<p class="name">Takamine D1N</p>
+	<p class="price">Price : 475$</p>
+	<div class="overlay">
+			<div class="text">
+				<h3>Takamine D1N</h3>
+				<p>Form : Satonia</p>
+				<p>System ES-B</p>
+				<p>Wood make body – Wood Sapele </p>
+				<p>Non-cutaway</p>
+			</div>
+	  </div>
+</div>
+  </div> 
+  <!--Fender---------------------------->
+  <div class="column fender">
+ 	<div class="sp">
+	<img src="img/Fender/cd-60sce-12-string-450x471.jpg" width="250px" height="250px">
+	<p class="name">Fender CD-60SCE 12-STRING</p>
+	<p class="price">Price :<del>900$</del> 799$</p>
+		<div class="overlay">
+			<div class="text">
+				<h3>Fender CD-60SCE 12-STRING</h3>
+				<p>Form: Dreadnought size (10e)</p>
+				<p>Side top: solid Sitka spruce</p>
+				<p>Side behind: sapele</p>
+				<p>Body: Mahogany</p>
+			</div>
+	  </div>
+	  <div class="sale">
+	  	Sale off 15%
+	  </div>
+</div>
+ </div>
+  <div class="column fender">
+  <div class="sp">
+	<img src="img/Fender/CJ 160S.jpg" width="250px" height="250px">
+	<p class="name">Fender CD160SE</p>
+	<p class="price">Price : <del>650$</del>600$</p>
+	<div class="overlay">
+			<div class="text">
+				<h3>Fender CD160SE</h3>
+				<p>Ebony fingerboard decorated</p>
+				<p>Body Lutz Spruce easy to setting</p>
+				<p>Wood Sapele pretty design</p>
+				<p>Small Size , easy to play</p>
+			</div>
+	  </div>
+	  <div class="sale">
+	  	Sale off 10%
+	  </div>
+</div>
+</div>
+  <div class="column fender">
+  	<div class="sp">
+	<img src="img/Fender/fender-cc-60s-450x471.jpg" width="250px" height="250px">
+	<p class="name">Fender CC60S</p>
+	<p class="price">Price : 550$</p>
+	<div class="overlay">
+			<div class="text">
+				<h3>Fender CC60S</h3>
+				<p>Shape: Potanony</p>
+				<p>Bracing: X Bracing</p>
+				<p>Wood: Sapele Laminate </p>
+				<p>Electronics: ES-2</p>
+			</div>
+	  </div>	
+		</div>
+  </div>
+  <div class="column fender">  
+  <div class="sp">
+	<img src="img/Fender/fender-cc-60s-lh-450x471.jpg" width="250px" height="250px">
+	<p class="name">FENDER CC-60S LH</p>
+	<p class="price">Price : 720$</p>
+	<div class="overlay">
+			<div class="text">
+				<h3>FENDER CC-60S LH</h3>
+				<p>Form: Titan</p>
+				<p>Bracing: X Bracing</p>
+				<p>Wood: Sitka Spruce</p>
+				<p>ED1 Series</p>
+			</div>
+	  </div>
+</div>
+  </div>
+  <div class="column fender"> 
+  <div class="sp">
+	<img src="img/Fender/fender-cc-60sce-450x471.jpg" width="250px" height="250px">
+	<p class="name"> Fender CC-60SCE</p>
+	<p class="price">Price :<del>400$</del> 350$</p>
+	<div class="overlay">
+			<div class="text">
+				<h3>Fender CC-60SCE</h3>
+				<p>Wood: Sitka full in front of</p>
+				<p>Side behind and next side made by <br>wood sapele classes</p>
+				
+				<p>Body : by durable wood sapele</p>
+				<p>20 keys of ebony wood with notes
+ <br>pattern 6mm</p>
+			</div>
+	  </div>
+	  <div class="sale">
+	  	Sale off 20%
+	  </div>
+</div>
+  </div> 
+  <div class="column fender">  
+  <div class="sp">
+	<img src="img/Fender/t-bucket-300-ce-flm-mpl-450x471.jpg" width="250px" height="250px">
+	<p class="name">T-bucket 300-CE FLM MPL</p>
+	<p class="price">Price : 475$</p>
+	<div class="overlay">
+			<div class="text">
+				<h3>T-bucket 300-CE FLM MPL </h3>
+				<p>Form : Satonia</p>
+				<p>System ES-B</p>
+				<p>Wood make body – Wood Sapele </p>
+				<p>Non-cutaway</p>
+			</div>
+	  </div>
+</div>
+  </div> 
+  <!--Sigma-------------------->
+    <div class="column sigma">
+ 	<div class="sp">
+	<img src="img/Sigma/dan-guitar-sigma-dmc-4e-450x471.jpg" width="250px" height="250px">
+	<p class="name">Sigma DMC-4E</p>
+	<p class="price">Price :<del>900$</del> 799$</p>
+		<div class="overlay">
+			<div class="text">
+				<h3>Sigma DMC-4E</h3>
+				<p>Form: Dreadnought size (10e)</p>
+				<p>Side top: solid Sitka spruce</p>
+				<p>Side behind: sapele</p>
+				<p>Body: Mahogany</p>
+			</div>
+	  </div>
+	  <div class="sale">
+	  	Sale off 15%
+	  </div>
+</div>
+ </div>
+  <div class="column sigma">
+  <div class="sp">
+	<img src="img/Sigma/dan-guitar-sigma-drc-1ste-sb-450x471.jpg" width="250px" height="250px">
+	<p class="name">Sigma DRC-1STE SB</p>
+	<p class="price">Price : <del>650$</del>600$</p>
+	<div class="overlay">
+			<div class="text">
+				<h3>Sigma DRC-1STE SB</h3>
+				<p>Ebony fingerboard decorated</p>
+				<p>Body Lutz Spruce easy to setting</p>
+				<p>Wood Sapele pretty design</p>
+				<p>Small Size , easy to play</p>
+			</div>
+	  </div>
+	  <div class="sale">
+	  	Sale off 10%
+	  </div>
+</div>
+</div>
+  <div class="column sigma">
+  	<div class="sp">
+	<img src="img/Sigma/guitar-sigma-dmrc-1ste-br-450x471.jpg" width="250px" height="250px">
+	<p class="name">Sigma DMRC-1STE</p>
+	<p class="price">Price : 550$</p>
+	<div class="overlay">
+			<div class="text">
+				<h3>Sigma DMRC-1STE</h3>
+				<p>Shape: Potanony</p>
+				<p>Bracing: X Bracing</p>
+				<p>Wood: Sapele Laminate </p>
+				<p>Electronics: ES-2</p>
+			</div>
+	  </div>	
+		</div>
+  </div>
+  <div class="column sigma">  
+  <div class="sp">
+	<img src="img/Sigma/sigma-guitars-dmc-1ste-natural-satin-450x471.jpg" width="250px" height="250px">
+	<p class="name">Sigma DMC-1STE</p>
+	<p class="price">Price : 720$</p>
+	<div class="overlay">
+			<div class="text">
+				<h3>Sigma DMC-1STE</h3>
+				<p>Form: Titan</p>
+				<p>Bracing: X Bracing</p>
+				<p>Wood: Sitka Spruce</p>
+				<p>ED1 Series</p>
+			</div>
+	  </div>
+</div>
+  </div>
+  <div class="column sigma"> 
+  <div class="sp">
+	<img src="img/Sigma/Đàn Guitar Sigma CMC-6E.jpg" width="250px" height="250px">
+	<p class="name"> Sigma CMC-6E</p>
+	<p class="price">Price :<del>400$</del> 350$</p>
+	<div class="overlay">
+			<div class="text">
+				<h3>Sigma CMC-6E</h3>
+				<p>Wood: Sitka full in front of</p>
+				<p>Side behind and next side made by <br>wood sapele classes</p>
+				
+				<p>Body : by durable wood sapele</p>
+				<p>20 keys of ebony wood with notes
+ <br>pattern 6mm</p>
+			</div>
+	  </div>
+	  <div class="sale">
+	  	Sale off 20%
+	  </div>
+</div>
+  </div> 
+  <div class="column sigma">  
+  <div class="sp">
+	<img src="img/Sigma/Đàn Guitar Sigma DMC-1STE.jpg" width="250px" height="250px">
+	<p class="name">Sigma DMC-1STE BK</p>
+	<p class="price">Price : 475$</p>
+	<div class="overlay">
+			<div class="text">
+				<h3>Sigma DMC-1STE BK</h3>
+				<p>Form : Satonia</p>
+				<p>System ES-B</p>
+				<p>Wood make body – Wood Sapele </p>
+				<p>Non-cutaway</p>
+			</div>
+	  </div>
+</div>
+  </div>
+  <!--Kapok---------------------------------->
+  <div class="column kapok">
+  	<div class="sp">
+	<img src="img/Kapok/LD18.jpg" width="250px" height="250px">
+	<p class="name">Kapok LD18</p>
+	<p class="price">Price : 235$</p>
+	<div class="overlay">
+			<div class="text">
+				<h3>Kapok LD18</h3>
+				<p>Shape: Puntero</p>
+				<p>Bracing: X Bracing</p>
+				<p>Wood: Sapele Laminate </p>
+				<p>Electronics: ES-2</p>
+			</div>
+	  </div>	
+		</div>
+  </div>
+  <!--Lazer------------------------------------>
+  <div class="column lazer">
+  	<div class="sp">
+	<img src="img/Lazer/lazer-lg-866-450x471.jpg" width="250px" height="250px">
+	<p class="name">Lazer LG866</p>
+	<p class="price">Price : 290$</p>
+	<div class="overlay">
+			<div class="text">
+				<h3>Lazer LG866</h3>
+				<p>Shape: Puntero</p>
+				<p>Bracing: X Bracing</p>
+				<p>Wood: Sapele Laminate </p>
+				<p>Electronics: ES-2</p>
+			</div>
+	  </div>	
+		</div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+</article>
+	<!--/*Div News*/-->
+	<!--<div class="aside1">
+		<center>
+		<p class="font1">
+			Hot FingerStyle Songs
+		</p>
+		</center>
+	</div>
+	<div class="aside">
+	  <div class="News">
+			<img src="img/SunghaJ_FlowsinY.jpg">  
+			<p>River Flows in You - Sungha Jung (FingerStyle)</p>  
+		</div>
+	  <div class="News">
+			<img src="img/Andrew_foy.jpg" >  
+			<p>Despacito - Andrew Foy (FingerStyle) </p>
+		</div>
+		<div class="News">
+			<img src="img/Igor_Pre.jpg" >  
+			<p>Túy Âm - Igor Presnyakov (FingerStyle) </p>
+		</div>
+		<div class="News">
+			<img src="img/Josephine.jpg" >  
+			<p>Attention - Josephine (FingerStyle) </p>
+		</div>
+	</div>-->
+	<!--/*Div Last*/-->
+	<footer>
+		<div class="footer_left">
+		
+			<ul>
+			<h2>ABOUT GUITAR MASTER</h2>
+				<li>About Company</li>
+				<li>Showroom,Address</li>
+				<li>Contact,Feedback</li>
+				<li>Recruitment</li>
+				<li>Installment Purchase</li>
+				<li>MemberShip</li>
+			</ul>
+		</div>
+		<div class="footer_center">
+		
+			<ul>
+			<h2>CUSTOMER SUPPORTING</h2>
+				<li>Dilivery,Exchange</li>
+				<li>How to buy</li>
+				<li>Payment,Security</li>
+				<li>Warranty Policy</li>
+				<li>Maintenance Guitar</li>
+			</ul>
+		</div>
+		<div class="footer_center">
+		
+			<ul>
+			<h2>INDIRECT CONTACT</h2>
+				<li>SwitchBoard: 1800 22799(Free)</li>
+				<li>Mobile: 0393420402</li>
+				<li>Email: info@guitarmaster.com.vn</li>
+			</ul>
+		</div>
+		<div class="footer_center">
+		
+			<ul>
+			<h2>WEBSITE SYSTEMS</h2>
+				<li>Guitar Master Shop</li>
+				<li>Guitar Master School</li>
+				<li>Guitar Master Events</li>
+				
+			</ul>
+		</div>
+		<div class="footer_right">
+			<ul>
+			<h2>SOCIAL</h2>
+				<img src="img/fblogo.jpg" width="32" height="32">
+				<img src="img/gmaillogo.jpg" width="32" height="32">
+				<img src="img/instagram-logo1.jpg" width="32" height="32">
+				<img src="img/www.jpg" width="32" height="32">
+			</ul>
+		</div>
+	</footer>
+	<footer>
+		<div class="footer_center">
+		
+			<ul>
+			<h2>GUITARMASTER T-S-M JOINT STOCK COMPANY</h2>
+			<li>BLN 0304757752 issued by HCMC DOP AND I on 22/07/2012</li>
+			<li>Address : 788/5b CMT8 , Tan Binh District , HCM City</li>
+				<li style="color: #1399D9">SwitchBoard: 1800 22799(Free)</li>
+				<li style="color: #1399D9">HotLine: 0393420402</li>
+				<li style="color: #1399D9">Email: info@guitarmaster.com.vn</li>
+			</ul>
+		</div>
+		<div class="footer_center">
+		
+			<ul>
+			<h2>PAYMENT METHODS</h2>
+				<img src="img/Visa.png" >
+				
+			</ul>
+		</div>
+		<div class="footer_right">
+		
+			<ul>
+			<h2>CERTIFICATIONS</h2>
+				<img src="img/cndk.png" >
+				<img src="img/cntb.png" >
+				<img src="img/dmca_premi_badge_5.png" >
+				
+			</ul>
+		</div>
+	</footer>
+	
+<!--/*JavaScript*/-->
+<script src="js/SignIn.js"></script>
+<!--<script src="js/SlideShow1.js"></script>>-->
+<script src="js/AutomaticSlide.js"></script>
+<script src="js/RollProduct.js"></script>
+</body>
+</html>
